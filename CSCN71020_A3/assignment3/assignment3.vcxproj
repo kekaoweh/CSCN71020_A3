@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dummymain.c" />
     <ClCompile Include="primenumbers.c" />
   </ItemGroup>
   <ItemGroup>

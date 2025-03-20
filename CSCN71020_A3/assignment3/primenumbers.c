@@ -10,6 +10,7 @@ const char* isPrime(int num) {
 		if (num % i == 0) {
 			return "Not Prime";
 		}
+		return "Prime";
 	}
 	return "Prime";
 }

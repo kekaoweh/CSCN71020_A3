@@ -18,6 +18,9 @@
     <ClCompile Include="primenumbers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dummymain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="primenumbers.h">
