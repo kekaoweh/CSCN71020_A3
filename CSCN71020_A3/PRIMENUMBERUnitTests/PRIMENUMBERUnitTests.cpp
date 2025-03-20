@@ -9,13 +9,23 @@ namespace PRIMENUMBERUnitTests
 	{
 	public:
 		
-		TEST_METHOD(Prime_TESTS)
+		TEST_METHOD(prime_TESTS)
 		{
 			Assert::AreEqual("Prime", isPrime(2));
 			Assert::AreEqual("Prime", isPrime(3));
 			Assert::AreEqual("Prime", isPrime(5));
 			Assert::AreEqual("Prime", isPrime(7));
 			Assert::AreEqual("Prime", isPrime(9));
+		}
+
+
+		TEST_METHOD(notPrime_TESTS)
+		{
+			Assert::AreEqual("Not Prime", isPrime(4));
+			Assert::AreEqual("Not Prime", isPrime(6));
+			Assert::AreEqual("Not Prime", isPrime(8));
+			Assert::AreEqual("Not Prime", isPrime(10));
+			Assert::AreEqual("Not Prime", isPrime(12));
 		}
 	};
 }
