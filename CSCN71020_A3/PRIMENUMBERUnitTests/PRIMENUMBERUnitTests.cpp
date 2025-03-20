@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 
+extern "C" {
+#include "../assignment3/primenumbers.h"
+}
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace PRIMENUMBERUnitTests
@@ -11,14 +15,14 @@ namespace PRIMENUMBERUnitTests
 		
 		TEST_METHOD(prime_TESTS)
 		{
-			Assert::AreEqual("Prime", isPrime(2));
-			Assert::AreEqual("Prime", isPrime(3));
-			Assert::AreEqual("Prime", isPrime(5));
+			Assert::AreEqual("Prime", isPrime(2)); 
+			Assert::AreEqual("Prime", isPrime(3)); 
+			Assert::AreEqual("Prime", isPrime(5)); 
 			Assert::AreEqual("Prime", isPrime(7));
 			Assert::AreEqual("Prime", isPrime(9));
 		}
 
-
+		 
 		TEST_METHOD(notPrime_TESTS)
 		{
 			Assert::AreEqual("Not Prime", isPrime(4));
