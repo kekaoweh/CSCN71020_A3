@@ -27,5 +27,13 @@ namespace PRIMENUMBERUnitTests
 			Assert::AreEqual("Not Prime", isPrime(10));
 			Assert::AreEqual("Not Prime", isPrime(12));
 		}
+
+		TEST_METHOD(edgeCases_TESTS)
+		{
+			Assert::AreEqual("Not Prime", isPrime(1));
+			Assert::AreEqual("Not Prime", isPrime(0));
+			Assert::AreEqual("Not Prime", isPrime(-3));
+			Assert::AreEqual("Not Prime", isPrime(7.9));
+		}
 	};
 }
